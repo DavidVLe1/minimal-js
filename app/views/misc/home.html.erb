@@ -8,10 +8,13 @@
   <li id="jfk" class="east">New York</li>
   <li id="sfo" class="west">San Francisco</li>
 </ul>
-
+<div id="bye">Click me</div>
 <script>
   // Write your JS here.
   // Open the JS console and refresh the page to see the output.
-
-  
+  $(document).ready(function() {
+    $("body").on("click", "#bye", function() {
+      console.log("clicked!");
+    });
+  });
 </script>
